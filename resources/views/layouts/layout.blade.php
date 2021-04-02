@@ -18,7 +18,6 @@
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -29,23 +28,27 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             @switch($locale)
                                 @case('en')
+                                <img src="images/uk.png" class="rounded-sm" style="width: 15px">
                                 English
                                 @break
                                 @case('ru')
+                                <img src="images/ru.png" class="rounded-sm" style="width: 15px">
                                 Russian
                                 @break
                                 @case('uz')
+                                <img src="images/uzb.png" class="rounded-sm" style="width: 15px">
                                 Uzbek
                                 @break
                                 @default
-                                English
+                                 <img src="images/uk.png" class="rounded-sm" style="width: 15px">
+                               English
                             @endswitch
                             <span class="caret"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="lang/en"><img src=""> English</a>
-                            <a class="dropdown-item" href="lang/ru"><img src=""> Russian</a>
-                            <a class="dropdown-item" href="lang/uz"><img src=""> Uzbek</a>
+                            <a class="dropdown-item" href="lang/en"><img src="images/uk.png" class="rounded-sm" style="width: 15px"> English</a>
+                            <a class="dropdown-item" href="lang/ru"><img src="images/ru.png" class="rounded-sm" style="width: 15px"> Russian</a>
+                            <a class="dropdown-item" href="lang/uz"><img src="images/uzb.png" class="rounded-sm" style="width: 15px"> Uzbek</a>
                         </div>
                     </li>
                 </ul>
@@ -57,6 +60,9 @@
         @yield('content')
     </main>
 </div>
+<footer>
+    
+</footer>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
